@@ -1,0 +1,17 @@
+spring:
+  profiles: dev-1
+server:
+  port: 8080
+tomcat:
+  localClusterMemberPort: 8085
+  clusterMembers: 127.0.0.1:8084
+
+---
+
+spring:
+  profiles: dev-2
+server:
+  port: 8081
+tomcat:
+  localClusterMemberPort: 8084
+  clusterMembers: 127.0.0.1:8085
